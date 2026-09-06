@@ -1,0 +1,116 @@
+* {
+  font-family:
+    Red Hat Display,
+    sans-serif;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto;
+}
+@media screen and (min-width: 700px) {
+  body {
+    background-image: url(images/pattern-background-desktop.svg);
+  }
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: min(100vw, 400px);
+  border-radius: 15px 15px 15px 15px;
+  overflow: hidden;
+}
+.product-img {
+  width: 100%;
+  height: auto;
+}
+.summary-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 20px;
+  background-color: hsl(0, 0%, 100%);
+}
+.order-summary {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+.order-description {
+  color: hsl(224, 23%, 55%);
+}
+.order-summary-wrapper {
+  display: flex;
+  background-color: hsl(240, 75%, 98%);
+  align-items: center;
+  padding: 1em 1em;
+  border-radius: 15px 15px;
+}
+.icon {
+  width: 35px;
+  height: 35px;
+}
+.plan-wrapper {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  margin: 0px 2em 0px 10px;
+}
+.plan {
+  color: black;
+  font-size: 14px;
+  margin: 0px 20px;
+}
+.change-plan {
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+.price {
+  font-size: 14px;
+  color: hsl(224, 23%, 55%);
+}
+.confirm-order {
+  font-size: 14px;
+  font-weight: 700;
+  width: 100%;
+  height: 3em;
+  border-radius: 10px;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  transition: background-color 0.3s ease-in-out;
+}
+.cancel-order {
+  font-size: 14px;
+  font-weight: 700;
+  width: 7em;
+  height: 1em;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(224, 23%, 55%);
+  transition: background-color 0.3s ease-in-out;
+}
+.cancel-order:hover,
+.cancel-order:focus-visible {
+  color: hsl(223, 47%, 23%);
+}
+.confirm-order:hover,
+.confirm-order:focus-visible {
+  background-color: hsl(245, 83%, 68%);
+}
+.change-plan:hover,
+.change-plan:focus-visible {
+  color: hsl(245, 83%, 68%);
+}
